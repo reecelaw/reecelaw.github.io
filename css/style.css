@@ -2,6 +2,29 @@
 body {
   padding: 0;
   margin: 0;
-  border: 0; }
+  border: 0;
+  width: 100%; }
+  body .site {
+    display: grid;
+    grid-template-columns: 2fr 4fr; }
+    body .site header {
+      background: darkgrey;
+      grid-column: 1 / 2; }
+      body .site header #logo {
+        width: 30%; }
+    body .site nav {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      background-color: darkgrey; }
+      body .site nav .container {
+        display: grid;
+        grid-auto-flow: column; }
+        body .site nav .container a {
+          display: flex;
+          justify-content: center;
+          font-family: "Arvo";
+          text-decoration: none;
+          color: black;
+          background-color: red; }
 
 /*# sourceMappingURL=style.css.map */
